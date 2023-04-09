@@ -23,12 +23,6 @@ using Microsoft.Extensions.Logging;
 //10 minut
 //9. Funkcja nie powinna dodawać tego samego zamówienia kilka razy
 //10. Użyj bibliotek RestSharp i NewtonsoftJson
-//11. Pomocne może być narzędzie https://json2csharp.com/
-//Rozwiązanie prześlij do kd@sellpander.pl oraz d.liberski@sellpander.pl niezależnie od tego czy uda Ci
-//się zrealizować wszystkie wymagania. Zadanie oceniane jest na podstawie konkretnych kryteriów,
-//ukończenie funkcji jest ważne ale nie czyni rozwiązania automatycznie „poprawnym”.
-//Termin: 16.04.2023 g. 23:59
-//Jeśli termin jest dla Ciebie zbyt krótki, daj znać i uwzględnimy ewentualne przesunięcia.
 #endregion
 
 namespace FaireLinkerApp
