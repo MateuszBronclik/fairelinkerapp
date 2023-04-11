@@ -8,5 +8,27 @@ namespace FaireLinkerApp.Models
 {
     internal class BaselinkerOrder
     {
+        public int OrderSourceId { get; set; } = 1024;
+        public int OrderStatusId { get; set; } = 8069;
+        public string Email { get; set; }
+        public string Phone { get; set; }
+        public string FullName { get; set; }
+        public string Address1 { get; set; }
+        public string Address2 { get; set; }
+        public string ZipCode { get; set; }
+        public string City { get; set; }
+        public string Country { get; set; }
+        public List<BaselinkerOrderProduct> Products { get; set; }
+        public string AdditionalField { get; set; }
+    }
+
+    internal class BaselinkerOrderProduct
+    {
+        public string ProductId { get; set; }
+        public string Name { get; set; }
+        public int Quantity { get; set; }
+        public double Price { get; set; }
+        
     }
 }
+
