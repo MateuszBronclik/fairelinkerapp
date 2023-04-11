@@ -3,6 +3,7 @@ using Microsoft.Azure.WebJobs;
 using Microsoft.Azure.WebJobs.Host;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
+using RestSharp;
 
 #region Zadanie
 //Faire
@@ -43,6 +44,14 @@ namespace FaireLinkerApp
             var faireAccessToken = _configuration["X-FAIRE-ACCESS-TOKEN"];
 
             log.LogInformation($"C# Timer trigger function executed at: {DateTime.Now}");
+
+            RestClient client = new RestClient("https://www.faire.com/api/v1/");
+            RestRequest request = new RestRequest("orders",Method.Get);
+            //To authenticate calls to the API, pass your Faire API access token
+            //as an HTTP request header named "X-FAIRE-ACCESS-TOKEN".
+            request.AddHeader("X-FAIRE-ACCESS-TOKEN", faireAccessToken);
+
+
         }
     }
 }
