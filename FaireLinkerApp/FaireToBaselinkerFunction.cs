@@ -1,25 +1,23 @@
 ﻿using System;
 using Microsoft.Azure.WebJobs;
-using Microsoft.Azure.WebJobs.Host;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
-using RestSharp;
-using Newtonsoft.Json;
 using System.Collections.Generic;
 using FaireLinkerApp.Models;
 using FaireLinkerApp.ModelMapper;
 using FaireLinkerApp.Services;
 
+
 namespace FaireLinkerApp
 {
-    public class FaireToBaselinker
+    public class FaireToBaselinkerFunction
     {
         private readonly IConfiguration _configuration;
         private readonly FaireService _faireService;
         private readonly BaselinkerService _baselinkerService;
         private readonly HashSet<string> _processedOrderIds;
 
-        public FaireToBaselinker(IConfiguration configuration)
+        public FaireToBaselinkerFunction(IConfiguration configuration)
         {
             _configuration = configuration;
             _faireService = new FaireService(_configuration["X-FAIRE-ACCESS-TOKEN"]);
@@ -27,10 +25,10 @@ namespace FaireLinkerApp
             _processedOrderIds = new HashSet<string>();
         }
 
-        [FunctionName("FaireToBaselinker")]
+        [FunctionName("FaireToBaselinkerFunction")]
         public void Run([TimerTrigger("0 */10 * * * *")] TimerInfo myTimer, ILogger log)
         {
-            log.LogInformation($"C# Timer trigger function executed at: {DateTime.Now}");
+            log.LogInformation($"Timer trigger function executed at: {DateTime.Now}");
 
             List<FaireOrder.Root> faireOrders = _faireService.GetFaireOrders();
 
