@@ -20,7 +20,7 @@ namespace FaireLinkerApp.Models
         public string Country { get; set; }
         public string CompanyName { get; set; }
         public List<BaselinkerOrderProduct> Products { get; set; }
-        public string AdditionalField { get; set; }
+        public string AssignedFaireID { get; set; }
     }
 
     internal class BaselinkerOrderProduct
