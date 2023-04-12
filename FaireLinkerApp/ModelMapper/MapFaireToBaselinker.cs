@@ -1,9 +1,6 @@
 ﻿using FaireLinkerApp.Models;
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 
 namespace FaireLinkerApp.ModelMapper
 {
@@ -35,7 +32,7 @@ namespace FaireLinkerApp.ModelMapper
                     Quantity = item.quantity,
                     Sku = item.sku,
                     Price = item.price_cents / 100.0,
-                    
+
                 });
             }
 
