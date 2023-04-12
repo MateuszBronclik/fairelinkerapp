@@ -10,9 +10,8 @@ namespace FaireLinkerApp.Models
     {
         public int OrderSourceId { get; set; } = 1024;
         public int OrderStatusId { get; set; } = 8069;
-        public string Email { get; set; }
         public string Phone { get; set; }
-        public string FullName { get; set; }
+        public string Name { get; set; }
         public string Address1 { get; set; }
         public string Address2 { get; set; }
         public string ZipCode { get; set; }
