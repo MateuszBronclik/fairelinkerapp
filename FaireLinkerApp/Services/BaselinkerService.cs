@@ -4,7 +4,7 @@ using RestSharp;
 
 namespace FaireLinkerApp.Services
 {
-    internal class BaselinkerService
+    internal class BaselinkerService : IBaselinkerService
     {
         private readonly string _baseLinkerToken;
 

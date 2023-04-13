@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace FaireLinkerApp.Models
 {
-    internal class FaireOrder
+    public class FaireOrder
     {
         // Root myDeserializedClass = JsonConvert.DeserializeObject<Root>(myJsonResponse);
         public class Address
