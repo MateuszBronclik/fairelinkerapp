@@ -3,7 +3,7 @@
 
 namespace FaireLinkerApp.Models
 {
-    internal class BaselinkerOrder
+    public class BaselinkerOrder
     {
         public int OrderSourceId { get; set; } = 1024;
         public int OrderStatusId { get; set; } = 8069;
@@ -20,7 +20,7 @@ namespace FaireLinkerApp.Models
         public string AssignedFaireID { get; set; }
     }
 
-    internal class BaselinkerOrderProduct
+    public class BaselinkerOrderProduct
     {
         public string ProductId { get; set; }
         public string ProductOptionId { get; set; }

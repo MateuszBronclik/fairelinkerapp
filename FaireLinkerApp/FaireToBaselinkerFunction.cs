@@ -13,15 +13,15 @@ namespace FaireLinkerApp
     public class FaireToBaselinkerFunction
     {
         private readonly IConfiguration _configuration;
-        private readonly FaireService _faireService;
-        private readonly BaselinkerService _baselinkerService;
+        private readonly IFaireService _faireService;
+        private readonly IBaselinkerService _baselinkerService;
         private readonly HashSet<string> _processedOrderIds;
 
-        public FaireToBaselinkerFunction(IConfiguration configuration)
+        public FaireToBaselinkerFunction(IConfiguration configuration, IFaireService faireService, IBaselinkerService baselinkerService)
         {
             _configuration = configuration;
-            _faireService = new FaireService(_configuration["X-FAIRE-ACCESS-TOKEN"]);
-            _baselinkerService = new BaselinkerService(_configuration["X-BLToken"]);
+            _faireService = faireService;
+            _baselinkerService = baselinkerService;
             _processedOrderIds = new HashSet<string>();
         }
 

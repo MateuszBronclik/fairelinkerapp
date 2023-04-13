@@ -6,7 +6,7 @@ using System.Collections.Generic;
 
 namespace FaireLinkerApp.Services
 {
-    internal class FaireService
+    internal class FaireService : IFaireService
     {
         private readonly string _faireAccessToken;
 
