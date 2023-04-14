@@ -7,6 +7,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FaireLinkerApp", "FaireLink
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestsFaireLinkerApp", "..\TestsFaireLinkerApp\TestsFaireLinkerApp.csproj", "{4BBDAE89-D40F-4554-9B85-F740A8380488}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution", "Solution", "{A5CB68A3-9C02-45C5-99A9-886E232D462C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{9A3411EB-B672-4F02-9730-DCC04CEE7D4C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,6 +28,10 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{237C932E-0FD4-4927-BCCC-BAEBBF5DA90E} = {A5CB68A3-9C02-45C5-99A9-886E232D462C}
+		{4BBDAE89-D40F-4554-9B85-F740A8380488} = {9A3411EB-B672-4F02-9730-DCC04CEE7D4C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B8D5DCCA-DD66-455D-98D4-FD6730804B6A}

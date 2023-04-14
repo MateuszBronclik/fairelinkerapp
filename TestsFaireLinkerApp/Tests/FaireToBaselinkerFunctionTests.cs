@@ -3,7 +3,7 @@ using TestsFaireLinkerApp.Tests;
 public class FaireToBaselinkerFunctionTests
 {
     [Fact]
-    public void Run_ShouldProcessFaireOrders()
+    public void Run_Should_Process_FaireOrders()
     {
         // Arrange
         var mockConfiguration = new Mock<IConfiguration>();
