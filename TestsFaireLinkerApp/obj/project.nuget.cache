@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "iiMT+zRaz2rQy9pAShLRw0TwtCLSKBQWYs56Csy9kUw082yMLRWln8iI0H7HASQX1sZAmGTx6jN6JtpiVmJW1w==",
+  "dgSpecHash": "QzR/3XNecrXyjqt0FF5XZmCTf7oit+10CwgTGpgY1cS+r5DVA71dF4qRkxGLg0xzXQVBKe2KTAnxVlZvi86JaQ==",
   "success": true,
   "projectFilePath": "D:\\Programowanie\\fairelinkerapp\\TestsFaireLinkerApp\\TestsFaireLinkerApp.csproj",
   "expectedPackageFiles": [
@@ -157,7 +157,8 @@
     "C:\\Users\\mateu\\.nuget\\packages\\xunit.assert\\2.4.2\\xunit.assert.2.4.2.nupkg.sha512",
     "C:\\Users\\mateu\\.nuget\\packages\\xunit.core\\2.4.2\\xunit.core.2.4.2.nupkg.sha512",
     "C:\\Users\\mateu\\.nuget\\packages\\xunit.extensibility.core\\2.4.2\\xunit.extensibility.core.2.4.2.nupkg.sha512",
-    "C:\\Users\\mateu\\.nuget\\packages\\xunit.extensibility.execution\\2.4.2\\xunit.extensibility.execution.2.4.2.nupkg.sha512"
+    "C:\\Users\\mateu\\.nuget\\packages\\xunit.extensibility.execution\\2.4.2\\xunit.extensibility.execution.2.4.2.nupkg.sha512",
+    "C:\\Users\\mateu\\.nuget\\packages\\xunit.runner.visualstudio\\2.4.5\\xunit.runner.visualstudio.2.4.5.nupkg.sha512"
   ],
   "logs": []
 }

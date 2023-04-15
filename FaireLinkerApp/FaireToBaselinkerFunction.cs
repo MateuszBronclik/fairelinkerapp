@@ -7,7 +7,6 @@ using FaireLinkerApp.Models;
 using FaireLinkerApp.ModelMapper;
 using FaireLinkerApp.Services;
 
-
 namespace FaireLinkerApp
 {
     public class FaireToBaselinkerFunction
@@ -16,6 +15,8 @@ namespace FaireLinkerApp
         private readonly IFaireService _faireService;
         private readonly IBaselinkerService _baselinkerService;
         private readonly HashSet<string> _processedOrderIds;
+        private readonly int _orderSourceId;
+        private readonly int _orderStatusId;
 
         public FaireToBaselinkerFunction(IConfiguration configuration, IFaireService faireService, IBaselinkerService baselinkerService)
         {
@@ -23,6 +24,8 @@ namespace FaireLinkerApp
             _faireService = faireService;
             _baselinkerService = baselinkerService;
             _processedOrderIds = new HashSet<string>();
+            _orderSourceId = int.Parse(configuration["OrderSourceId"] ?? "1024");
+            _orderStatusId = int.Parse(configuration["OrderStatusId"] ?? "8069");
         }
 
         [FunctionName("FaireToBaselinkerFunction")]
@@ -36,7 +39,7 @@ namespace FaireLinkerApp
             {
                 if (!_processedOrderIds.Contains(faireOrder.id))
                 {
-                    BaselinkerOrder baselinkerOrder = MapFaireToBaselinker.Map(faireOrder);
+                    BaselinkerOrder baselinkerOrder = MapFaireToBaselinker.Map(faireOrder, _orderSourceId, _orderStatusId);
                     if (_baselinkerService.AddOrder(baselinkerOrder))
                     {
                         _processedOrderIds.Add(faireOrder.id);
@@ -55,4 +58,3 @@ namespace FaireLinkerApp
         }
     }
 }
-

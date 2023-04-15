@@ -18,3 +18,6 @@ D:\Programowanie\fairelinkerapp\TestsFaireLinkerApp\obj\Debug\net7.0\refint\Test
 D:\Programowanie\fairelinkerapp\TestsFaireLinkerApp\obj\Debug\net7.0\TestsFaireLinkerApp.pdb
 D:\Programowanie\fairelinkerapp\TestsFaireLinkerApp\obj\Debug\net7.0\TestsFaireLinkerApp.genruntimeconfig.cache
 D:\Programowanie\fairelinkerapp\TestsFaireLinkerApp\obj\Debug\net7.0\ref\TestsFaireLinkerApp.dll
+D:\Programowanie\fairelinkerapp\TestsFaireLinkerApp\bin\Debug\net7.0\xunit.runner.visualstudio.dotnetcore.testadapter.dll
+D:\Programowanie\fairelinkerapp\TestsFaireLinkerApp\bin\Debug\net7.0\xunit.runner.reporters.netcoreapp10.dll
+D:\Programowanie\fairelinkerapp\TestsFaireLinkerApp\bin\Debug\net7.0\xunit.runner.utility.netcoreapp10.dll
