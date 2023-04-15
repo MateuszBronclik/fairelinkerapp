@@ -1,4 +1,6 @@
-using TestsFaireLinkerApp.Tests;
+namespace TestsFaireLinkerApp.Tests;
+
+
 
 public class FaireToBaselinkerFunctionTests
 {

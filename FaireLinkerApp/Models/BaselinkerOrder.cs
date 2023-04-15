@@ -5,8 +5,8 @@ namespace FaireLinkerApp.Models
 {
     public class BaselinkerOrder
     {
-        public int OrderSourceId { get; set; } = 1024;
-        public int OrderStatusId { get; set; } = 8069;
+        public int OrderSourceId { get; set; }
+        public int OrderStatusId { get; set; }
         public string Phone { get; set; }
         public string Name { get; set; }
         public string Address1 { get; set; }

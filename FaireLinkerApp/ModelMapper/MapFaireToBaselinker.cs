@@ -1,12 +1,11 @@
 ﻿using FaireLinkerApp.Models;
 using System.Collections.Generic;
 
-
 namespace FaireLinkerApp.ModelMapper
 {
     public class MapFaireToBaselinker
     {
-        public static BaselinkerOrder Map(FaireOrder.Root faireOrder)
+        public static BaselinkerOrder Map(FaireOrder.Root faireOrder, int orderSourceId, int orderStatusId)
         {
             var baselinkerOrder = new BaselinkerOrder
             {
@@ -20,6 +19,8 @@ namespace FaireLinkerApp.ModelMapper
                 Country = faireOrder.address.country_code,
                 CompanyName = faireOrder.address.company_name,
                 AssignedFaireID = faireOrder.id,
+                OrderSourceId = orderSourceId,
+                OrderStatusId = orderStatusId,
                 Products = new List<BaselinkerOrderProduct>()
             };
 
@@ -32,7 +33,6 @@ namespace FaireLinkerApp.ModelMapper
                     Quantity = item.quantity,
                     Sku = item.sku,
                     Price = item.price_cents / 100.0,
-
                 });
             }
 
